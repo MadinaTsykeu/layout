@@ -320,6 +320,7 @@ button {
 
     .services-container {
         margin-top: 42px;
+        justify-content: space-between;
     }
 
     .services-container__line {
