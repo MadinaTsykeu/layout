@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'TT Lakes Regular';
-    src: url('/fonts/TTLakes-Regular.eot');
-    src: url('/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/TTLakes-Regular.woff') format('woff'),
-    url('/fonts/TTLakes-Regular.ttf') format('truetype');
+    src: url('fonts/TTLakes-Regular.eot');
+    src: url('fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/TTLakes-Regular.woff') format('woff'),
+    url('fonts/TTLakes-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     }
 
     @font-face {
         font-family: 'TT Lakes Bold';
-        src: url('/fonts/TTLakes-Bold.eot');
-        src: url('/fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/TTLakes-Bold.woff') format('woff'),
-        url('/fonts/TTLakes-Bold.ttf') format('truetype');
+        src: url('fonts/TTLakes-Bold.eot');
+        src: url('fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTLakes-Bold.woff') format('woff'),
+        url('fonts/TTLakes-Bold.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
         }
@@ -107,7 +107,7 @@ button {
   
     .header-menu__btn-repair::before {
         content: "";
-        background-image: url('/images/divider.svg');
+        background-image: url('images/divider.svg');
         background-repeat: no-repeat;
         position: absolute;
         width: 2px;
@@ -200,7 +200,7 @@ button {
 @media (min-width: 768px) {
     .header-menu__btn-burger::after {
         content: "";
-        background-image: url('/images/divider.svg');
+        background-image: url('images/divider.svg');
         background-repeat: no-repeat;
         position: absolute;
         width: 2px;
@@ -240,7 +240,7 @@ button {
 
     .header-menu__btn-repair::before {
         content: "";
-        background-image: url('/images/divider.svg');
+        background-image: url('images/divider.svg');
         background-repeat: no-repeat;
         position: absolute;
         width: 2px;
