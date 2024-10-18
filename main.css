@@ -315,7 +315,6 @@ button {
 @media (min-width: 1120px) {
     .header {
         display: none;
-        justify-content: space-between;
     }
 
     .services-container {
