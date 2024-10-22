@@ -8,26 +8,31 @@
     font-style: normal;
     }
 
-    @font-face {
-        font-family: 'TT Lakes Bold';
-        src: url('fonts/TTLakes-Bold.eot');
-        src: url('fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/TTLakes-Bold.woff') format('woff'),
-        url('fonts/TTLakes-Bold.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-        }
+@font-face {
+    font-family: 'TT Lakes Bold';
+    src: url('fonts/TTLakes-Bold.eot');
+    src: url('fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/TTLakes-Bold.woff') format('woff'),
+    url('fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: 'TT Lakes Regular';
-      }
+* {
+    margin: 0;
+    padding: 0; 
+    font-family: 'TT Lakes Regular';
+}
 
 body {
-        overflow-x: hidden;
-        background: #F8F8F8;
-      }
+    overflow-x: hidden;
+    background: #F8F8F8;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
 .services-tab__btn {
     font-size: 16px;
@@ -38,8 +43,7 @@ body {
 }
 
 .services-tab__btn--active {
-    border-radius: 6px ;
-    opacity: 0px;    
+    border-radius: 6px ;   
     border: 2px solid #B8FFEC;
     background-color: #FFFFFF;
 }
@@ -62,67 +66,38 @@ button {
     .header-container {
         display: flex;
         justify-content: space-between;
-    }
-    
-     .header-menu__btn {
-        width: 40px;
-        height: 40px;
-        margin-top: 24px;
-        margin-bottom: 24px;
-    }
-
-    .header-menu__btn-burger {
-        margin-left: 16px; 
-        margin-right: 16.73px; 
+        padding-left: 16px;
+        padding-right: 16px;
+        gap:16px;
     }
     
     .header-logo {
         width: 96.55px;
         height: 50.81px;
-        margin-top: 18.59px;
-        margin-bottom: 18.59px;
-        margin-right: 16.73px;
+        padding-top: 18.59px;
+        padding-bottom: 18.59px;
     }
 
-    .header-menu__btn-call {
+    .btn--call,.btn--chat,.btn--profile{
         display: none;
     }
 
-    .header-menu__btn-chat {
-        display: none;
-    }
-
-    .header-menu__btn-profile {
-        display: none;
-    }
-    
-    .header-menu__btn-repair {
-        margin-left: 20px;
-    }
-
-    .header-menu__btn-checkstatus {
-        margin-left: 16px;
-        margin-right: 16px; 
-    }
-  
-    .header-menu__btn-repair::before {
-        content: "";
-        background-image: url('images/divider.svg');
-        background-repeat: no-repeat;
-        position: absolute;
+    .line {
         width: 2px;
         height: 32px;
-        top: 28px;
-        left: 186px;
-        gap: 0px;
-        border-radius: 1px 0px 0px 0px;
-        opacity: 0px;
+        margin-top: 28px;
+        border-radius: 1px;
+        background: rgb(234, 234, 234);
+     }
+
+    .line--sofrware {
+        display: none;
     }
 
     .services-container {
         display: flex;
-        margin-top: 24px;
-        margin-bottom: 24px;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
     .services-container__line {
@@ -144,17 +119,16 @@ button {
         white-space: nowrap;
         overflow-x: auto;
         overflow-y: hidden;
-        margin-left: 16px;
-        
+        padding-left: 16px;   
+    }
+
+    .title {
+        display: flex;
     }
 
     .text {
-        width: 288px;
+        width: auto;
         height: 90px;
-        top: 240px;
-        left: 16px;
-        gap: 0px;
-        opacity: 0px;
         overflow: hidden;
         font-size: 14px;
         font-weight: 400;
@@ -165,12 +139,11 @@ button {
     }
 
     .services-description__software {
-        margin-top: 15px;
+        padding-top: 15px;
     }
 
     .services-more__link {
         color: rgb(27, 28, 33);
-        font-family: TT Lakes;
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
@@ -188,7 +161,9 @@ button {
     }
 
     .promo {
-        margin-top: 16px;
+        width: 100%;
+        height: auto;
+        padding-top: 16px;
     }
 
     .services-header__actions {
@@ -198,95 +173,63 @@ button {
 
 
 @media (min-width: 768px) {
-    .header-menu__btn-burger::after {
-        content: "";
-        background-image: url('images/divider.svg');
-        background-repeat: no-repeat;
-        position: absolute;
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 24px;
+        padding-right: 24px;
+        gap: 16px;
+    }
+
+    .btn--call, .btn--chat, .btn--profile {
+        display: initial;
+    }
+
+    .btn--call {
+        padding-left: 250px;
+    }
+
+    .line {
         width: 2px;
         height: 32px;
-        top: 28px;
-        left: 84px;
-        gap: 0px;
-        border-radius: 1px 0px 0px 0px;
-        opacity: 0px;
+        margin-top: 28px;
+        border-radius: 1px;
+        background: rgb(234, 234, 234);
     }
 
-    .header-menu__btn-burger {
-        margin-left: 24px;
-        margin-right: 42.73px;
-    }
-
-    .header-logo {
-        position: relative;
-        margin-right: 0px;
-    }
-
-    .header-menu__btn-call {
+    .line--sofrware {
         display: initial;
-        margin-left: 250.73px;
-    }
-
-    .header-menu__btn-chat {
-        display: initial;
-        margin-left: 16px;
-    }
-
-    .header-menu__btn-profile {
-        display: initial;
-        margin-left: 16px;
-        margin-right: 0px;
-    }
-
-    .header-menu__btn-repair::before {
-        content: "";
-        background-image: url('images/divider.svg');
-        background-repeat: no-repeat;
-        position: absolute;
-        width: 2px;
-        height: 32px;
-        top: 28px;
-        left: 626px;
-        gap: 0px;
-        border-radius: 1px 0px 0px 0px;
-        opacity: 0px;
-    }
-
-    .header-menu__btn-repair {
-        margin-left: 42px;
-    }
-
-
-    .header-menu__btn-checkstatus {
-        margin-right: 24px;
     }
 
     .services-tabs {
-        margin-left: 24px;
+        padding-left: 24px;
+    }
+
+    .title {
+        display: flex;
     }
 
     .text {
         padding-top: 32px;
         padding-bottom: 0px;
         overflow: hidden;
-        width: 312px;
+        width: 100%;
         height: 160px;
-        top: 256px;
-        left: 24px;
-        gap: 0px;
-        opacity: 0px;
-        font-family: TT Lakes;
         font-size: 14px;
         line-height: 20px;
         text-align: left;
     }
 
+    .text-content {
+        width: 50%;
+    }
+
     .services-description__software {
-        margin-top: 20px;
+        padding-top: 20px;
     }
 
     .services-more {
-        margin-top: 10px;
+        padding-top: 10px;
     }
 
     .content-wrapper {
@@ -294,17 +237,13 @@ button {
         align-items: flex-start;
         justify-content: space-between;
         gap: 20px;
-        }
+    }
     
     .promo {
-        width: 360px;
-        height: 208px;
-        top: 256px;
-        left: 384px;
-        gap: 0px;
-        opacity: 0px;
-        margin-top: 32px;
-        }
+        width: 50%;
+        height: auto;
+        padding-top: 32px;
+    }
 
     .services-header__actions {
         display: none;
@@ -318,8 +257,14 @@ button {
     }
 
     .services-container {
-        margin-top: 42px;
+        display: flex;
+        padding-top: 42px;
         justify-content: space-between;
+        padding-right: 32px;
+    }
+
+    .title {
+        display: flex;
     }
 
     .services-container__line {
@@ -336,14 +281,11 @@ button {
     .services-header__actions {
         display: initial;
         display: flex;
-        justify-content: flex-end;
         gap: 32px;
     }
 
     .services-header__button-text {
-        font-size: 16px; 
-        font-family: TT Lakes;
-        
+        font-size: 16px;  
     }
 
    .services-header__button {
@@ -352,37 +294,22 @@ button {
         gap: 8px;
    }
 
-    .services-header__button--repair {
-        padding-left: 441px;
-    }
-
-    .services-header__button--checkstatus {
-        padding-right: 32px;
-    }
-
     .text {
         overflow: hidden;
-        width: 490px;
+        width: 100%;
         height: 160px;
-        top: 188.22px;
-        left: 35px;
-        gap: 0px;
-        opacity: 0px;
-        font-family: TT Lakes;
         font-size: 14px;
         line-height: 20px;
-        letter-spacing: 0.20000000298023224px;
         text-align: left;
     }
 
     .services-more {
-        margin-top: 13.78px;
+        padding-top: 13.78px;
     }
 
     .promo {
-        width: 531.35px;
-        height: 307px;
-        top: 179px;
-        left: 561px;
+        width: 50%;
+        height: auto;
     }
-}
+} 
+
