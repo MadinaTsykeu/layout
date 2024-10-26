@@ -29,6 +29,14 @@ body {
     background: #F8F8F8;
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 16px;
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -54,6 +62,52 @@ button {
     cursor: pointer;
 }
 
+.btn {
+    display: flex;
+    margin-top: 24px;
+    border: none;
+    background-color: #FF3E79;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.btn--menu {
+    background-image: url('/images/main.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn--repair {
+    background-image: url('/images/repair.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn--checkstatus {
+    background-image: url('/images/checkstatus.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn--call {
+    background-image: url('/images/call.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn--chat {
+    background-image: url('/images/chat.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn--profile {
+    background-image: url('/images/profile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
 @media (min-width: 320px) {
@@ -66,9 +120,6 @@ button {
     .header-container {
         display: flex;
         justify-content: space-between;
-        padding-left: 16px;
-        padding-right: 16px;
-        gap:16px;
     }
     
     .header-logo {
@@ -176,9 +227,6 @@ button {
     .header-container {
         display: flex;
         justify-content: space-between;
-        padding-left: 24px;
-        padding-right: 24px;
-        gap: 16px;
     }
 
     .btn--call, .btn--chat, .btn--profile {
@@ -186,7 +234,7 @@ button {
     }
 
     .btn--call {
-        padding-left: 250px;
+        margin-left: 250px;
     }
 
     .line {
@@ -276,23 +324,24 @@ button {
 
     .services-container__title {
         font-size: 28px;
-        padding-left: 30px;
     }
 
     .services-header__actions {
         display: initial;
         display: flex;
         gap: 32px;
+        align-items: center;
     }
 
     .services-header__button-text {
         font-size: 16px;  
     }
 
-   .services-header__button {
+   .btn {
         display: flex;
         align-items: center;
         gap: 8px;
+        margin: 0;
    }
 
     .text {
