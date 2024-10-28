@@ -74,19 +74,19 @@ button {
 }
 
 .btn--menu {
-    background-image: url('images/main.svg');
+    background-image: url('./images/main.svg');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .btn--repair {
-    background-image: url('images/repair.svg');
+    background-image: url('../images/repair.svg');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .btn--checkstatus {
-    background-image: url('images/checkstatus.svg');
+    background-image: url('/images/checkstatus.svg');
     background-repeat: no-repeat;
     background-position: center;
 }
