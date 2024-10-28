@@ -44,36 +44,28 @@ button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .btn--burger{
     background-image: url('../images/x.svg');
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .btn--search {
     background-image: url('../images/search.svg');
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .btn--chatcopy {
     background-image: url('../images/search.svg');
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .btn--chat {
     background-image: url('../images/chat.svg');
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .btn--profile {
     background-image: url('../images/profile.svg');
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 button:hover {

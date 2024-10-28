@@ -71,42 +71,32 @@ button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .btn--menu {
     background-image: url('./images/main.svg');
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .btn--repair {
-    background-image: url('../images/repair.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('./images/repair.svg');
 }
 
 .btn--checkstatus {
-    background-image: url('/images/checkstatus.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('./images/checkstatus.svg');
 }
 
 .btn--call {
-    background-image: url('images/call.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('./images/call.svg');
 }
 
 .btn--chat {
-    background-image: url('images/chat.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('./images/chat.svg');
 }
 
 .btn--profile {
-    background-image: url('images/profile.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('./images/profile.svg');
 }
 
 
