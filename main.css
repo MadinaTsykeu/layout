@@ -31,10 +31,6 @@ body {
 
 .header-container {
     display: flex;
-    justify-content: space-between;
-    padding-left: 16px;
-    padding-right: 16px;
-    gap: 16px;
 }
 
 .container {
@@ -99,6 +95,13 @@ button {
     background-image: url('./images/profile.svg');
 }
 
+.header-logo {
+    width: auto;
+    height: 50.81px;
+    padding-top: 18.59px;
+    padding-bottom: 18.59px;
+}
+
 
 @media (min-width: 320px) {
     .header {
@@ -109,14 +112,25 @@ button {
     
     .header-container {
         display: flex;
-        justify-content: space-between;
+        overflow: hidden;
     }
-    
+
+    .btn--menu {
+        margin-left: 16px;
+    }
+
     .header-logo {
-        width: 96.55px;
-        height: 50.81px;
-        padding-top: 18.59px;
-        padding-bottom: 18.59px;
+        margin-left: 16.73px;
+        margin-right: 16.73px;
+}
+
+    .btn--repair {
+        margin-left: 20px;
+        margin-right: 16px;
+    }
+
+    .btn--checkstatus {
+        margin-right: 16px;;
     }
 
     .btn--call,.btn--chat,.btn--profile{
@@ -216,15 +230,42 @@ button {
 @media (min-width: 768px) {
     .header-container {
         display: flex;
-        justify-content: space-between;
     }
 
     .btn--call, .btn--chat, .btn--profile {
         display: initial;
     }
 
+    .btn--menu {
+        margin-left: 24px;
+        margin-right: 20px;
+    }
+
+    .header-logo {
+        margin-left: 20.73px;
+        margin-right: 0px;
+    }
+
     .btn--call {
-        margin-left: 250px;
+        margin-left: 250.73px;
+        margin-right: 16px;
+    }
+
+    .btn--chat {
+        margin-right: 16px;
+    }
+
+    .btn--profile {
+        margin-right: 20px;
+    }
+
+    .btn--repair {
+        margin-left: 20px;
+        margin-right: 16px;
+    }
+
+    .btn--checkstatus {
+        margin-right: 24px;
     }
 
     .line {
