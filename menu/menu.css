@@ -147,5 +147,11 @@ button:hover {
     color: #7E7E82;
 }
 
+main {
+    padding-top: 46px;
+}
 
-
+.menu-block__contact {
+    margin-top: auto;
+    padding-bottom: 0px;
+}
