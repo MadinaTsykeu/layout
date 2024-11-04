@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'TT Lakes Regular';
+    src: url('../fonts/TTLakes-Regular.eot');
+    src: url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Regular.woff') format('woff'),
+        url('../fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'TT Lakes Regular';
+}
+
+.header-container {
+    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+}
+
+.header-title {
+    font-size: 16px;
+    text-align: left;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #7E7E82;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+body {
+    background-color: #F8F8F8;
+}
+
+.logo {
+    width: 240px;
+    height: 72px;
+    border: 1px solid #EAEAEA;
+    background: #FFFFFF;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+}
+
+.arrow-btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FF3E79;
+    margin-left: auto;
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/dropdown.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+@media (min-width: 320px) {
+    .header-container {
+        width: auto;
+        height: 80px;
+    }
+
+    .header-title {
+        padding:16px;
+    }
+
+    .brand-container {
+        display: flex;
+        gap: 16px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        display: flex;
+        margin-left: 16px;
+        align-items: center;
+        margin-top: 16px;
+        margin-bottom: 32px;
+        width: 240px;
+        height: 72px;
+        border: 1px solid #EAEAEA;
+        background: #FFFFFF;
+        border-radius: 6px;
+        padding-left: 16px;     
+    }
+
+    .swiper-slide img {
+        object-fit: contain;
+    }
+
+    .swiper-pagination {
+        width: 204px;
+        height: 12px;
+    }
+
+    .swiper-pagination-bullet {
+        height: 12px;
+        width: 12px;
+        background: #DDDDDD;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #B5B6BC;
+    }
+
+    .gradient-overlay {
+        width: 24px;
+        height: 81px;
+        position: fixed;
+        margin-top:-114px;
+        right: 0;
+        z-index: 10;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+        pointer-events: none;
+    }
+
+    .brand-container {
+        display: none;
+    }
+
+    .more {
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .swiper {
+        display: none;
+    }
+
+    .header-container {
+        height: 56px;
+    }
+
+    .header-title {
+        padding-left: 24px;
+    }
+    
+    .brand-container {
+        display: initial;
+    }
+
+    .brand-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 24px;
+    }
+    
+    .logo {
+        width: 224px;
+        box-sizing: border-box;
+    }
+
+    .hidden-768 {
+        display: none;
+    }
+
+    .more {
+        display: initial;
+        display: flex;
+        gap: 9px;
+        margin-top: 24px;
+    }
+    
+    .more__expand {
+        padding-left: 24px;
+    }
+
+    #toggleButton {
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: #F8F8F8;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .logo {
+    width: 24%;
+    }
+}
+
+@media (min-width: 1120px) {
+    .brand-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 16px 32px;
+    }
+    
+    .logo {
+        width: 240px;
+        box-sizing: border-box;
+    }
+
+    .header-title {
+        padding-left: 32px;
+    }
+
+    .hidden-1120 {
+        display: none;
+    }
+            
+    .hidden-768 {
+        display: initial;
+        display: flex;
+        align-items: center;
+    }  
+}

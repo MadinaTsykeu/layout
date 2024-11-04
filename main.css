@@ -60,7 +60,6 @@ button {
 
 .btn {
     display: flex;
-    margin-top: 24px;
     border: none;
     background-color: #FF3E79;
     cursor: pointer;
@@ -112,41 +111,49 @@ button {
     
     .header-container {
         display: flex;
-        overflow: hidden;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 16px;
+        }
+    
+    .header-left,
+    .header-right {
+        display: flex;
+        align-items: center;
     }
-
+    
     .btn--menu {
-        margin-left: 16px;
-    }
-
-    .header-logo {
-        margin-left: 16.73px;
         margin-right: 16.73px;
-}
-
-    .btn--repair {
-        margin-left: 20px;
-        margin-right: 16px;
     }
-
-    .btn--checkstatus {
-        margin-right: 16px;;
+    
+    .header-logo {
+        margin-right: 16.73px;
     }
-
-    .btn--call,.btn--chat,.btn--profile{
-        display: none;
-    }
-
+    
     .line {
         width: 2px;
         height: 32px;
-        margin-top: 28px;
         border-radius: 1px;
         background: rgb(234, 234, 234);
-     }
-
+    }
+    
     .line--sofrware {
         display: none;
+    }
+    
+    .btn--call,
+    .btn--chat,
+    .btn--profile {
+        display: none;
+    }
+    
+    .btn--repair {
+        margin-left: 20px;
+    }
+    
+    .btn--checkstatus {
+        margin-left: 16px;
     }
 
     .services-container {
@@ -271,7 +278,6 @@ button {
     .line {
         width: 2px;
         height: 32px;
-        margin-top: 28px;
         border-radius: 1px;
         background: rgb(234, 234, 234);
     }
