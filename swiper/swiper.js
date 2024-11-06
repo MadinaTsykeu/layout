@@ -8,6 +8,7 @@ var swiper = new Swiper('.mySwiper', {
 });
 
 
+
 document.getElementById("toggleButton").addEventListener("click", function () {
     const width = window.innerWidth;
     let hiddenLogos;
@@ -17,7 +18,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
     } else if (width >= 768) {
         hiddenLogos = document.querySelectorAll(".hidden-768");
     } else {
-        hiddenLogos = []; 
+        hiddenLogos = [];
     }
 
     const isHidden = hiddenLogos.length && hiddenLogos[0].style.display === "none";

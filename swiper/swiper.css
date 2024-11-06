@@ -136,6 +136,10 @@ body {
 
 
 @media (min-width: 768px) {
+    .hidden-768 {
+        display: none;
+    }
+
     .swiper {
         display: none;
     }
@@ -167,10 +171,6 @@ body {
         box-sizing: border-box;
     }
 
-    .hidden-768 {
-        display: none;
-    }
-
     .more {
         display: initial;
         display: flex;
@@ -199,10 +199,19 @@ body {
 }
 
 @media (min-width: 1120px) {
+    .hidden-768 {
+        display: flex;
+    }
+
+    .hidden-1120 {
+        display: none;
+    }
+    
     .brand-container {
         display: flex;
         flex-wrap: wrap;
         padding: 16px 32px;
+        max-width: 1120px;
     }
     
     .logo {
@@ -213,14 +222,4 @@ body {
     .header-title {
         padding-left: 32px;
     }
-
-    .hidden-1120 {
-        display: none;
-    }
-            
-    .hidden-768 {
-        display: initial;
-        display: flex;
-        align-items: center;
-    }  
 }
